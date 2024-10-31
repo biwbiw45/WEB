@@ -1,0 +1,89 @@
+/* Global Styling */
+body {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  height: 100vh;
+  background-color: #ffebf0;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Calculator Container */
+.calculator {
+  width: 300px;
+  border: 2px solid #ff66a3;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Display */
+#display {
+  width: 92%;
+  height: 50px;
+  margin-bottom: 10px;
+  text-align: right;
+  font-size: 24px;
+  padding: 10px;
+  border: 2px solid #ff66a3;
+  border-radius: 5px;
+  background-color: #ffe6f0;
+}
+
+/* Buttons Grid */
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+/* Button Styling */
+button {
+  padding: 20px;
+  font-size: 20px;
+  border: none;
+  border-radius: 70px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Number Buttons (Pink) */
+button.number {
+  background-color: #ff99cc;
+  color: white;
+}
+
+button.number:hover {
+  background-color: #ff80b3;
+}
+
+/* Operator Buttons (+, -, /, *, %) (Purple) */
+button.operator {
+  background-color: #cc66ff;
+  color: white;
+}
+
+button.operator:hover {
+  background-color: #b34dff;
+}
+
+/* Clear Button (Red) */
+button.clear {
+  background-color: #ff4d4d;
+  color: white;
+}
+
+button.clear:hover {
+  background-color: #ff3333;
+}
+
+/* Equals Button (Green) */
+button.equal {
+  background-color: #66ff66;
+  color: white;
+}
+
+button.equal:hover {
+  background-color: #4dff4d;
+}
